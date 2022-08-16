@@ -1,0 +1,18 @@
+<div class="list-group">
+    <button class="list-group-item" active
+        *ngFor="let game of games">
+        <div class="card-body">
+            <h5 class="card-title">{{ game['title'] }} </h5>
+            <p class="card-text">{{ game['genre'] }} </p>
+            <p class="card-text"><small class="text-muted">{{game['cost'] | currency:'USD'}}</small></p>
+                <table>
+                    <td width="50px" align="center">
+                        <a [routerLink]="['/edit-game', game['id']]">Edit<i class="fa fa-edit"></i></a>
+                    </td>
+                    <td width="50px" align="center">
+                        <a [routerLink]="['/delete-game', game['id']]">Delete<i class="fa fa-trash"></i></a>
+                    </td>
+                </table>
+        </div>
+    </button>
+</div>

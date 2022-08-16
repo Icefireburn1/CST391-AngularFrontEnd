@@ -1,0 +1,23 @@
+<form #cGame = "ngForm" (ngSubmit)="createGame(cGame.value)">
+    <div class="form-outline mb-4">
+        <label>ID</label>
+        <input type="text" name="id" id="form3Example1cg" class="form-control form-control-lg" ngModel/>
+    </div>
+    <div class="form-outline mb-4">
+        <label>Title</label>
+        <input type="text" name="title" id="form3Example1cg" class="form-control form-control-lg" ngModel/>
+    </div>
+    <div class="form-outline mb-4">
+        <label>Genre</label>
+        <input type="text" name="genre" id="form3Example1cg" class="form-control form-control-lg" ngModel/>
+    </div>
+    <div class="form-outline mb-4">
+        <label>Cost</label>
+        <input type="text" name="cost" id="form3Example1cg" class="form-control form-control-lg" ngModel/>
+    </div>
+
+    <div class="d-flex justify-content-left">
+        <button type="submit" value="submit"
+          class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Create</button>
+    </div>
+</form>
